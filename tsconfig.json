@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"removeComments": true,
+
+		/* Bundler mode */
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"noEmitOnError": true,
+		"pretty": true,
+
+		/* Linting */
+		"noImplicitReturns": true,
+		"forceConsistentCasingInFileNames": true,
+
+		/* Alias */
+		"baseUrl": "./src",
+		"paths": {
+			"@/*": ["./*"]
+		}
+	},
+	"references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
+}

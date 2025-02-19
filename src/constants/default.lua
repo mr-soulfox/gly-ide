@@ -1,0 +1,31 @@
+local function init(std, game)
+end
+
+local function loop(std, game)
+end
+
+local function draw(std, game)
+    std.draw.clear(std.color.green)
+    std.draw.color(std.color.white)
+    std.text.put(1 , 1, 'Hello world!')
+end
+
+local function exit(std, game)
+end
+
+local P = {
+    meta={
+        title='Hello world',
+        author='Gamelly',
+        description='say hello to the world!',
+        version='1.0.0'
+    },
+    callbacks={
+        init=init,
+        loop=loop,
+        draw=draw,
+        exit=exit
+    }
+}
+
+return P
