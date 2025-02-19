@@ -137,3 +137,5 @@ tmp/*
 *.lock
 *-lock*
 vite-env.d.ts
+vite.config.js
+vite.config.d.ts

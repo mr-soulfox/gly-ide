@@ -1,4 +1,4 @@
-name: cd
+name: deploy
 
 env:
   CLOUDFLARE_PROJECT_TRYLUA: ide-gly
@@ -11,7 +11,6 @@ on:
   pull_request:
     branches:
       - main
-      - develop
 
 jobs:
   pages:
