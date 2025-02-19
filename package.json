@@ -20,11 +20,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.25.9",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@gamely/core-native-html5": "^0.0.18",
     "@gamely/gly-engine": "^0.0.18",
     "@mui/material": "^6.4.5",
+    "@rollup/plugin-commonjs": "^28.0.2",
     "@tailwindcss/vite": "^4.0.7",
     "@xyflow/react": "^12.4.3",
     "animate.css": "^4.1.1",

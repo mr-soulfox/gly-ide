@@ -8,7 +8,7 @@ export default tseslint.config(
 	{ ignores: ['dist', 'node_modules', 'public'] },
 	{
 		extends: [js.configs.recommended, ...tseslint.configs.recommended],
-		files: ['**/*.{ts,js}'],
+		files: ['**/*.{ts,tsx}'],
 		languageOptions: {
 			ecmaVersion: 2020,
 			globals: globals.browser,
@@ -18,6 +18,7 @@ export default tseslint.config(
 			'react-refresh': reactRefresh,
 		},
 		rules: {
+			...reactHooks.configs.recommended.rules,
 			'no-unused-vars': 'off',
 			'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
 			'@typescript-eslint/no-unused-vars': [
