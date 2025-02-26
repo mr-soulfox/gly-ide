@@ -1,0 +1,3 @@
+[submodule "include/gly-engine"]
+	path = include/gly-engine
+	url = https://github.com/gamelly/gly-engine

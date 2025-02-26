@@ -20,8 +20,14 @@ jobs:
       - uses: actions/checkout@master
       - run: |
           npm install
+
+      - run: |
+          echo 'VITE_WEB_RTC_URL="stun:stun.gmx.net"' > .env
+          echo 'VITE_ENGINE_VERSION=' >> .env
+
       - run: |
           npm run build
+
       - if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository || github.event_name == 'workflow_dispatch'
         uses: cloudflare/pages-action@v1
         with:
